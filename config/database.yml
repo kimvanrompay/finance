@@ -79,6 +79,8 @@ test:
 #
 production:
   <<: *default
-  database: finance_production
-  username: finance
+  database: prdfinance
+  username: doadmin
   password: <%= ENV["FINANCE_DATABASE_PASSWORD"] %>
+  host: db-postgresql-ams3-33861-do-user-14694822-0.c.db.ondigitalocean.com
+  port: 25060
